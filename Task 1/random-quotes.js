@@ -9,6 +9,8 @@ displayRandomQuote = function () {
 
     }
     var rand = Math.floor(Math.random() * Object.keys(quotes).length);
-    console.log(quotes[rand]);
+    if(rand % 2 > 0){
+      console.log(quotes[rand]);
+    }
 }
 displayRandomQuote();
